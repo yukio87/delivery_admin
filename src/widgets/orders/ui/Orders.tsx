@@ -16,6 +16,7 @@ import { FilterButtonGroup, Input, OrderRow } from './components'
 import * as S from './style'
 
 export const Orders = () => {
+  console.log('test')
   const { page, drinkId } = useAppSelector(getOrdersParams)
 
   const { data, isFetching, error, refetch } = useGetOrdersQuery({
