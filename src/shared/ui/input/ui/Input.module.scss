@@ -1,0 +1,48 @@
+@mixin input-styles {
+  padding: 8px 11px;
+
+  font-size: 11px;
+  line-height: 12.65px;
+  color: var(--c-black);
+  letter-spacing: -0.19px;
+
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #fff;
+  }
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.label {
+  font-size: 10.5px;
+  line-height: 12.07px;
+  color: rgb(73 80 87 / 100%);
+  letter-spacing: -0.18px;
+}
+
+.input {
+  @include input-styles();
+
+  border: 1px solid var(--c-grey);
+}
+
+.input-err {
+  @include input-styles();
+
+  border: 1px solid rgb(196 24 60 / 100%);
+  box-shadow: 0 0 3px 1px rgb(196 24 60 / 10%);
+}

@@ -1,0 +1,6 @@
+export const colorStone700 = '#44403c'
+export const colorOrange300 = '#fdba74'
+export const colorGray300 = '#d1d5db'
+export const colorGray400 = '#9ca3af'
+export const colorGray600 = '#4b5563'
+export const colorSky600 = '#0284c7'
